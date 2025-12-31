@@ -1,0 +1,667 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/board1.o
+udata RAM 1 20 20 1B 1 1
+code CODE 0 0 0 21B 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 3B-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 3B-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 21B-1FFF 2
+ENTRY 21B-1FFF 2
+IDLOC 2000-2003 2
+CODE 21B-1FFF 2
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 21B-1FFF 2
+STRING 21B-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/board1.o
+0 code CODE >116:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+4 code CODE >118:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+5 code CODE >124:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+6 code CODE >125:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+7 code CODE >126:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+8 code CODE >127:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+9 code CODE >128:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A code CODE >129:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B code CODE >130:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C code CODE >131:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D code CODE >132:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E code CODE >133:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F code CODE >134:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+10 code CODE >135:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+11 code CODE >136:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+12 code CODE >137:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+13 code CODE >138:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+14 code CODE >139:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+15 code CODE >140:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+16 code CODE >141:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+17 code CODE >147:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+18 code CODE >148:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+19 code CODE >151:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A code CODE >152:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B code CODE >153:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C code CODE >154:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D code CODE >155:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E code CODE >158:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F code CODE >159:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+20 code CODE >160:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+21 code CODE >161:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+22 code CODE >163:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+23 code CODE >164:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+24 code CODE >167:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+25 code CODE >168:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+26 code CODE >169:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+27 code CODE >176:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+28 code CODE >179:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+29 code CODE >182:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+2A code CODE >183:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+2B code CODE >184:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+2C code CODE >185:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+2D code CODE >186:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+2E code CODE >188:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+2F code CODE >193:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+30 code CODE >194:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+31 code CODE >195:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+32 code CODE >197:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+33 code CODE >198:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+34 code CODE >199:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+35 code CODE >202:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+36 code CODE >203:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+37 code CODE >204:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+38 code CODE >206:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+39 code CODE >216:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+3A code CODE >217:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+3B code CODE >218:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+3C code CODE >220:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+3D code CODE >221:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+3E code CODE >222:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+3F code CODE >224:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+40 code CODE >225:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+41 code CODE >226:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+42 code CODE >229:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+43 code CODE >233:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+44 code CODE >234:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+45 code CODE >236:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+46 code CODE >237:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+47 code CODE >238:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+48 code CODE >242:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+49 code CODE >243:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+4A code CODE >244:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+4B code CODE >246:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+4C code CODE >247:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+4D code CODE >248:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+4E code CODE >250:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+4F code CODE >251:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+50 code CODE >252:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+51 code CODE >253:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+52 code CODE >258:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+53 code CODE >259:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+54 code CODE >261:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+55 code CODE >262:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+56 code CODE >263:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+57 code CODE >265:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+58 code CODE >266:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+59 code CODE >267:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+5A code CODE >268:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+5B code CODE >270:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+5C code CODE >271:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+5D code CODE >272:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+5E code CODE >273:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+5F code CODE >277:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+60 code CODE >278:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+61 code CODE >279:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+62 code CODE >280:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+63 code CODE >281:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+64 code CODE >282:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+65 code CODE >286:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+66 code CODE >287:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+67 code CODE >288:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+68 code CODE >289:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+69 code CODE >290:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+6A code CODE >291:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+6B code CODE >292:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+6C code CODE >296:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+6D code CODE >297:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+6E code CODE >298:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+6F code CODE >299:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+70 code CODE >300:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+71 code CODE >301:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+72 code CODE >302:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+73 code CODE >303:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+74 code CODE >304:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+75 code CODE >308:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+76 code CODE >309:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+77 code CODE >311:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+78 code CODE >312:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+79 code CODE >314:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+7A code CODE >315:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+7B code CODE >316:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+7C code CODE >318:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+7D code CODE >319:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+7E code CODE >320:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+7F code CODE >321:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+80 code CODE >323:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+81 code CODE >324:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+82 code CODE >325:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+83 code CODE >326:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+84 code CODE >330:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+85 code CODE >331:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+86 code CODE >333:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+87 code CODE >334:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+88 code CODE >336:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+89 code CODE >337:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+8A code CODE >338:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+8B code CODE >340:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+8C code CODE >341:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+8D code CODE >342:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+8E code CODE >343:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+8F code CODE >345:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+90 code CODE >346:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+91 code CODE >347:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+92 code CODE >348:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+93 code CODE >352:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+94 code CODE >353:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+95 code CODE >355:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+96 code CODE >356:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+97 code CODE >358:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+98 code CODE >359:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+99 code CODE >360:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+9A code CODE >362:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+9B code CODE >363:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+9C code CODE >364:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+9D code CODE >366:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+9E code CODE >367:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+9F code CODE >375:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A0 code CODE >376:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A1 code CODE >378:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A2 code CODE >379:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A3 code CODE >380:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A4 code CODE >381:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A5 code CODE >382:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A6 code CODE >383:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A7 code CODE >384:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A8 code CODE >386:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+A9 code CODE >387:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+AA code CODE >388:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+AB code CODE >394:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+AC code CODE >395:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+AD code CODE >397:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+AE code CODE >398:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+AF code CODE >399:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B0 code CODE >400:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B1 code CODE >402:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B2 code CODE >403:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B3 code CODE >404:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B4 code CODE >406:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B5 code CODE >407:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B6 code CODE >408:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B7 code CODE >409:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B8 code CODE >412:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+B9 code CODE >413:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+BA code CODE >414:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+BB code CODE >415:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+BC code CODE >417:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+BD code CODE >418:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+BE code CODE >419:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+BF code CODE >420:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C0 code CODE >422:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C1 code CODE >423:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C2 code CODE >424:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C3 code CODE >425:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C4 code CODE >428:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C5 code CODE >429:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C6 code CODE >430:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C7 code CODE >431:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C8 code CODE >434:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+C9 code CODE >435:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+CA code CODE >436:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+CB code CODE >437:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+CC code CODE >439:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+CD code CODE >442:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+CE code CODE >443:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+CF code CODE >444:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D0 code CODE >445:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D1 code CODE >446:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D2 code CODE >447:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D3 code CODE >450:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D4 code CODE >451:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D5 code CODE >452:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D6 code CODE >453:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D7 code CODE >455:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D8 code CODE >456:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+D9 code CODE >457:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+DA code CODE >460:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+DB code CODE >461:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+DC code CODE >462:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+DD code CODE >466:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+DE code CODE >467:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+DF code CODE >468:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E0 code CODE >469:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E1 code CODE >470:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E2 code CODE >471:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E3 code CODE >472:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E4 code CODE >473:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E5 code CODE >474:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E6 code CODE >475:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E7 code CODE >476:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E8 code CODE >477:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+E9 code CODE >479:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+EA code CODE >480:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+EB code CODE >481:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+EC code CODE >485:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+ED code CODE >486:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+EE code CODE >487:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+EF code CODE >490:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F0 code CODE >491:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F1 code CODE >492:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F2 code CODE >493:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F3 code CODE >496:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F4 code CODE >497:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F5 code CODE >498:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F6 code CODE >499:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F7 code CODE >500:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F8 code CODE >503:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+F9 code CODE >504:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+FA code CODE >505:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+FB code CODE >506:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+FC code CODE >508:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+FD code CODE >509:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+FE code CODE >510:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+FF code CODE >511:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+100 code CODE >515:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+101 code CODE >516:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+102 code CODE >517:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+103 code CODE >518:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+104 code CODE >521:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+105 code CODE >522:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+106 code CODE >523:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+107 code CODE >524:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+108 code CODE >527:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+109 code CODE >528:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+10A code CODE >529:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+10B code CODE >530:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+10C code CODE >533:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+10D code CODE >534:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+10E code CODE >535:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+10F code CODE >536:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+110 code CODE >539:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+111 code CODE >540:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+112 code CODE >541:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+113 code CODE >542:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+114 code CODE >548:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+115 code CODE >549:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+116 code CODE >550:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+117 code CODE >551:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+118 code CODE >552:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+119 code CODE >553:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+11A code CODE >554:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+11B code CODE >555:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+11C code CODE >556:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+11D code CODE >559:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+11E code CODE >560:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+11F code CODE >562:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+120 code CODE >563:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+121 code CODE >564:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+122 code CODE >565:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+123 code CODE >566:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+124 code CODE >567:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+125 code CODE >570:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+126 code CODE >571:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+127 code CODE >573:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+128 code CODE >574:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+129 code CODE >577:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+12A code CODE >578:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+12B code CODE >579:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+12C code CODE >580:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+12D code CODE >581:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+12E code CODE >582:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+12F code CODE >583:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+130 code CODE >584:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+131 code CODE >585:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+132 code CODE >586:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+133 code CODE >587:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+134 code CODE >588:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+135 code CODE >589:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+136 code CODE >590:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+137 code CODE >591:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+138 code CODE >592:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+139 code CODE >593:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+13A code CODE >594:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+13B code CODE >595:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+13C code CODE >596:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+13D code CODE >599:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+13E code CODE >602:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+13F code CODE >603:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+140 code CODE >605:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+141 code CODE >606:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+142 code CODE >608:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+143 code CODE >609:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+144 code CODE >611:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+145 code CODE >612:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+146 code CODE >614:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+147 code CODE >615:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+148 code CODE >618:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+149 code CODE >619:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+14A code CODE >620:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+14B code CODE >621:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+14C code CODE >623:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+14D code CODE >624:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+14E code CODE >625:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+14F code CODE >626:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+150 code CODE >627:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+151 code CODE >629:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+152 code CODE >630:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+153 code CODE >631:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+154 code CODE >632:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+155 code CODE >633:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+156 code CODE >634:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+157 code CODE >637:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+158 code CODE >638:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+159 code CODE >639:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+15A code CODE >641:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+15B code CODE >642:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+15C code CODE >643:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+15D code CODE >649:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+15E code CODE >650:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+15F code CODE >651:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+160 code CODE >652:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+161 code CODE >653:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+162 code CODE >655:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+163 code CODE >656:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+164 code CODE >657:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+165 code CODE >658:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+166 code CODE >659:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+167 code CODE >661:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+168 code CODE >662:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+169 code CODE >663:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+16A code CODE >664:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+16B code CODE >665:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+16C code CODE >667:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+16D code CODE >668:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+16E code CODE >669:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+16F code CODE >670:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+170 code CODE >671:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+171 code CODE >672:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+172 code CODE >679:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+173 code CODE >680:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+174 code CODE >683:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+175 code CODE >684:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+176 code CODE >688:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+177 code CODE >689:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+178 code CODE >691:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+179 code CODE >692:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+17A code CODE >695:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+17B code CODE >697:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+17C code CODE >698:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+17D code CODE >701:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+17E code CODE >702:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+17F code CODE >703:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+180 code CODE >706:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+181 code CODE >707:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+182 code CODE >708:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+183 code CODE >710:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+184 code CODE >711:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+185 code CODE >717:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+186 code CODE >718:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+187 code CODE >719:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+188 code CODE >725:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+189 code CODE >726:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+18A code CODE >727:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+18B code CODE >729:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+18C code CODE >732:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+18D code CODE >733:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+18E code CODE >736:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+18F code CODE >737:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+190 code CODE >738:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+191 code CODE >739:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+192 code CODE >742:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+193 code CODE >743:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+194 code CODE >744:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+195 code CODE >747:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+196 code CODE >748:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+197 code CODE >749:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+198 code CODE >750:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+199 code CODE >751:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+19A code CODE >752:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+19B code CODE >753:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+19C code CODE >754:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+19D code CODE >755:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+19E code CODE >756:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+19F code CODE >757:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A0 code CODE >758:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A1 code CODE >760:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A2 code CODE >761:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A3 code CODE >763:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A4 code CODE >764:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A5 code CODE >765:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A6 code CODE >768:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A7 code CODE >769:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A8 code CODE >770:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1A9 code CODE >771:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1AA code CODE >772:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1AB code CODE >773:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1AC code CODE >775:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1AD code CODE >776:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1AE code CODE >777:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1AF code CODE >779:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B0 code CODE >780:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B1 code CODE >781:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B2 code CODE >783:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B3 code CODE >784:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B4 code CODE >785:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B5 code CODE >788:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B6 code CODE >789:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B7 code CODE >790:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B8 code CODE >791:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1B9 code CODE >793:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1BA code CODE >794:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1BB code CODE >795:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1BC code CODE >796:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1BD code CODE >797:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1BE code CODE >798:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1BF code CODE >799:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C0 code CODE >800:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C1 code CODE >801:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C2 code CODE >802:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C3 code CODE >803:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C4 code CODE >804:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C5 code CODE >805:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C6 code CODE >807:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C7 code CODE >808:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C8 code CODE >809:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1C9 code CODE >810:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1CA code CODE >811:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1CB code CODE >812:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1CC code CODE >813:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1CD code CODE >814:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1CE code CODE >815:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1CF code CODE >816:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D0 code CODE >817:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D1 code CODE >819:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D2 code CODE >820:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D3 code CODE >821:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D4 code CODE >822:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D5 code CODE >823:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D6 code CODE >824:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D7 code CODE >825:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D8 code CODE >826:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1D9 code CODE >827:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1DA code CODE >828:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1DB code CODE >829:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1DC code CODE >831:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1DD code CODE >832:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1DE code CODE >833:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1DF code CODE >834:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E0 code CODE >835:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E1 code CODE >836:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E2 code CODE >839:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E3 code CODE >840:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E4 code CODE >841:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E5 code CODE >843:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E6 code CODE >844:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E7 code CODE >845:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E8 code CODE >846:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1E9 code CODE >848:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1EA code CODE >849:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1EB code CODE >850:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1EC code CODE >851:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1ED code CODE >852:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1EE code CODE >854:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1EF code CODE >855:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F0 code CODE >856:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F1 code CODE >859:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F2 code CODE >860:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F3 code CODE >861:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F4 code CODE >862:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F5 code CODE >863:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F6 code CODE >864:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F7 code CODE >865:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F8 code CODE >866:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1F9 code CODE >867:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1FA code CODE >868:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1FB code CODE >869:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1FC code CODE >870:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1FD code CODE >873:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1FE code CODE >874:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+1FF code CODE >876:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+200 code CODE >877:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+201 code CODE >878:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+202 code CODE >881:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+203 code CODE >882:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+204 code CODE >884:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+205 code CODE >885:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+206 code CODE >887:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+207 code CODE >888:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+208 code CODE >889:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+209 code CODE >890:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+20A code CODE >891:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+20B code CODE >894:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+20C code CODE >895:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+20D code CODE >896:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+20E code CODE >897:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+20F code CODE >898:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+210 code CODE >899:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+211 code CODE >900:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+212 code CODE >901:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+213 code CODE >902:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+214 code CODE >903:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+215 code CODE >904:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+216 code CODE >905:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+217 code CODE >906:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+218 code CODE >907:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+219 code CODE >908:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+21A code CODE >909:C:\Users\Asus\Desktop\MicroProject.X\board1.asm
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 21B 0 ABS 0 - -
+__Hspace_1 3B 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4010 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 3B 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata 1 20 20 1B 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
